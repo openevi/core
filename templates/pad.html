@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evipad - Text writer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/pad.css">
+</head>
+<body>
+<div class="menu">
+    <div class="action">
+        <i class="fas fa-bold"></i>
+        <span>Bold</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-text-slash"></i>
+        <span>Crossed</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-italic"></i>
+        <span>Italic</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-underline"></i>
+        <span>Underline</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-heading"></i>
+        <span>Title</span>
+    </div>
+    <div class="separator"></div>
+    <div class="action">
+        <i class="fas fa-quote-right"></i>
+        <span>Quote</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-list-ul"></i>
+        <span>Dot List</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-list-ol"></i>
+        <span>Numerate List</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-list"></i>
+        <span>Square List</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-list-check"></i>
+        <span>Check List</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-table"></i>
+        <span>Table</span>
+    </div>
+    <div class="separator"></div>
+    <div class="action">
+        <i class="fas fa-align-center"></i>
+        <span>Align Center</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-align-justify"></i>
+        <span>Justify</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-align-left"></i>
+        <span>Align Left</span>
+    </div>
+    <div class="action">
+        <i class="fas fa-align-right"></i>
+        <span>Align Right</span>
+    </div>
+    <div class="separator"></div>
+    <div class="action">
+        <i class="fas fa-arrow-up-right-from-square"></i>
+        <span>Share</span>
+    </div>
+    <div class="action" onclick="window.open('/app/evipad/help')">
+        <i class="fas fa-question"></i>
+        <span>Help</span>
+    </div>
+</div>
+<div id="pad">
+    <textarea id="keylistener"></textarea>
+    <div id="render">
+        <div id="writing"></div>
+    </div>
+</div>
+<script src="/static/js/pad.js"></script>
+</body>
+</html>

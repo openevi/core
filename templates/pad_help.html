@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evipad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/pad.css">
+</head>
+<body>
+<h1 style="margin-left: 1em;">Help - EviPad</h1>
+<div style="padding-left: 2.5em">
+    Write your text in left text input and see the result at right...<br>
+    <h3>Syntax</h3>
+    All element have a symbol, this symbol need to be opened and closed with the text between the both like this:
+    <code>
+<pre>
+*test\*
+_text\_
+~text\~
+</pre>
+    </code>
+    <code>
+<pre>
+<b>text</b>
+<em>text</em>
+<del>text</del>
+</pre>
+    </code>
+    To center, justify align left / right a text, write %center|justify|right|left% your text %endalign%
+    <h3>Elements</h3>
+    You can make:
+    <ul>
+        <li>Bold (*)</li>
+        <li>Italic (_)</li>
+        <li>Cross (~)</li>
+        <li>Underline (--)</li>
+        <li>Title (|)</li>
+        <li>Quote (>)</li>
+        <li>Dot list (.)</li>
+        <li>Square list (-)</li>
+        <li>Check list (+)</li>
+        <li>Numerate list (=) + (.)</li>
+        <li>Centered (%center% - %endalign%)</li>
+        <li>Justified (%justify% - %endalign%)</li>
+        <li>Right align (%right% - %endalign%)</li>
+        <li>Left align (%left% - %endalign%)</li>
+    </ul>
+    with text.
+
+    <h3>Examples</h3>
+    <ul>
+        <li>*bold text\*</li>
+        <li>_italic text\_</li>
+        <li>~crossed text\~</li>
+        <li>--underlined text\--</li>
+        <li>|title\|</li>
+        <li>>quoted text\></li>
+        <li>.dot list element\.</li>
+        <li>-square list element\-</li>
+        <li>+check list element\+</li>
+        <li>= .numerated list element\. \=</li>
+        <li>
+            %center%
+            centered text
+            %endalign%
+        </li>
+        <li>
+            %justify%
+            justified text
+            %endalign%
+        </li>
+        <li>
+            %right%
+            right align text
+            %endalign%
+        </li>
+        <li>
+            %left%
+            left align text
+            %endalign%
+        </li>
+    </ul>
+</div>
+</body>
+</html>
